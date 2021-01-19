@@ -1,0 +1,80 @@
+.projects {
+  width: 100%;
+  height: fit-content;
+
+  .gallery-section {
+    width: 100%;
+  }
+
+  .inner-width {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .gallery-section h2 {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  .border {
+    width: 180px;
+    height: 4px;
+    background: #333;
+  }
+
+  .gallery-section .gallery {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-section .image {
+    flex: 20%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .gallery-section .image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+
+  .gallery-section .image:hover img {
+    transform: scale(1.4) rotate(0deg);
+  }
+
+  @media screen and (max-width: 960px) {
+    .gallery-section .image {
+      flex: 33.33%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .gallery-section .image {
+      flex: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .inner-width {
+      padding: 0 1rem !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .gallery-section .image {
+      flex: 100%;
+    }
+
+    .gallery-section .image {
+      margin-bottom: 1rem;
+    }
+
+    .gallery-section h1 {
+      margin-bottom: 30px;
+      font-size: 28px !important;
+    }
+  }
+}

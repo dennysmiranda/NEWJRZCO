@@ -1,0 +1,137 @@
+//Global colots
+$primary: #ff5d40;
+$white: #fff;
+$two: #ebebeb;
+$Opacity20White: rgba(255, 255, 255, 0.2);
+$black: #000;
+
+//fonts
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+//importing scss
+@import "./scss/header";
+@import "./scss/nav";
+@import "./scss/home";
+@import "./scss/projects";
+@import "./scss/services";
+@import "./scss/contact";
+@import "./scss/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+//backgrounf colors
+.orange-bc {
+  background-color: $primary;
+}
+
+.white-bc {
+  background-color: $white;
+}
+
+.black-bc {
+  background-color: $black;
+}
+
+//colors
+.orange-c {
+  color: $primary;
+}
+
+.white-c {
+  color: $white;
+}
+
+.black-c {
+  color: $black;
+}
+
+//last childs NO MARGIN
+.lastchild-nm-r {
+  margin-right: 0 !important;
+}
+
+//margin l&r
+
+.marginlr {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.marginb {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .marginb {
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .marginlr {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .marginl {
+    margin-right: 1rem;
+  }
+
+  .marginb2 {
+    margin-bottom: 1rem;
+  }
+
+  .margint {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marginb {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .marginlr {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .marginl {
+    margin-right: 0;
+  }
+
+  .marginb2 {
+    margin-bottom: 0;
+  }
+
+  .margint {
+    margin-top: 0;
+  }
+
+  .marginl3 {
+    margin-right: 1rem;
+  }
+
+  .marginb3 {
+    margin-bottom: 1rem;
+  }
+}
