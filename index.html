@@ -275,7 +275,7 @@
                     </div>
                 </div>
                 <div class="r-contact">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
 
                         <label>Full Name: <br>
                             <input type="text" name="name" required /></label>
@@ -288,6 +288,7 @@
 
                         <label>Message: <br>
                             <textarea style="resize: none;" name="message" rows="8"></textarea></label>
+                        <div data-netlify-recaptcha="true" class="recaptcha"></div>
 
                         <button type="submit">SEND MESSAGE</button>
 
