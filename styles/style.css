@@ -855,6 +855,10 @@ header img {
   border-radius: 20px;
 }
 
+.contact .contact-all-info .contact-info .r-contact form .recaptcha {
+  margin-bottom: 1rem;
+}
+
 .contact .contact-all-info .contact-info .r-contact form label {
   font-size: 14px;
   font-weight: 500;
